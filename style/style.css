@@ -193,3 +193,15 @@ header {
     }
 
 }
+
+/* desktop */
+@media screen and (min-width: 576px) and (max-width: 1400px) {
+    hr {
+        display: none;
+    }
+    .fa-solid,
+    .fa-bars {
+        visibility: hidden; 
+    }
+
+}
