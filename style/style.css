@@ -280,7 +280,7 @@ main {
 .ball-prev p {
     color: rgb(255, 255, 255);
     font-family: Font Awesome 5 Free;
-    font-size: 24px;
+    font-size: 1.6rem;
     font-weight: 900;
     line-height: 24px;
     text-align: center;
@@ -321,7 +321,7 @@ main {
 .Stories-title {
     color: rgb(0, 0, 0);
     font-family: Quicksand;
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 700;
     line-height: 38.35px;
     text-align: left;
@@ -331,7 +331,7 @@ main {
 .Standard-description {
     color: rgb(102, 102, 102);
     font-family: Raleway;
-    font-size: 10.34px;
+    font-size: 0.84px;
     font-weight: 500;
     line-height: 28.76px;
     text-align: left;
@@ -349,7 +349,7 @@ main {
     background: rgb(93, 88, 240);
     color: rgb(255, 255, 255);
     font-family: Raleway;
-    font-size: 9.13px;
+    font-size: 0.8px;
     font-weight: 500;
     line-height: 17.12px;
     text-align: center;
@@ -357,7 +357,7 @@ main {
     border: none;
     margin-left: 90px;
     position: relative;
-    top: -17px; 
+    top: -17px;
     width: 103.91px;
     height: 22.83px;
 }
@@ -367,7 +367,7 @@ main {
 .crad-title {
     color: rgb(0, 0, 0);
     font-family: Quicksand;
-    font-size: 10.34px;
+    font-size: 0.84rem;
     font-weight: 700;
     line-height: 28.76px;
     text-align: left;
@@ -385,6 +385,98 @@ main {
     height: 291.61px;
     background: rgb(255, 255, 255);
 }
+
+/* footer */
+footer {
+    background: rgb(1, 172, 253);
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; 
+    align-items: flex-start;
+    
+}
+
+.footer-logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.footer-logo h3 {
+    margin: 10px 0 5px;
+    font-size: 1.5rem;
+}
+
+.footer-logo p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+#lo-go {
+    display: inline-block;
+}
+
+#logo-title {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.footer-links,
+.footer-social {
+    margin: 20px 0;
+}
+
+.footer-links h4,
+.footer-social h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.footer-links a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+   
+}
+
+
 
 @media screen and (max-width: 576px) {
     header {
@@ -456,6 +548,11 @@ main {
         height: 1444px;
         align-items: center;
         position: relative;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
     }
 
 }
