@@ -33,6 +33,21 @@
 
 }
 
+.primary{
+    color: rgb(135, 0, 255);
+}
+
+.bg1{
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.bg2{
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+
+}
+.bg3{
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
 /* header */
 
 
@@ -85,7 +100,7 @@ header {
     text-decoration: none;
 }
 
-.btn-primary1{
+.btn-primary1 {
     border-radius: 12px;
     gap: 10;
     padding: 10px 40px;
@@ -96,7 +111,9 @@ header {
     font-weight: 600;
     line-height: 30px;
     text-align: left;
+    cursor: pointer;
 }
+
 .btn-primary {
     border-radius: 12px;
     gap: 10;
@@ -108,6 +125,7 @@ header {
     font-weight: 600;
     line-height: 30px;
     text-align: left;
+    cursor: pointer;
 }
 
 /* hero */
@@ -145,8 +163,92 @@ header {
     margin-left: 50px;
 }
 
+/* main */
+main {
+    max-width: 1440px;
+    height: 879px;
+    gap: 80;
+    margin: 0 160px;
 
 
+}
+
+/* Curriculum-section */
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+}
+
+
+.Curriculum-title {
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 57.5px;
+    text-align: center;
+}
+
+.Curriculum-container {
+    width: 300.8px;
+    height: 400.78px;
+    box-sizing: border-box;
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    /* background: linear-gradient(180deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255); */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+    gap: 20;
+}
+
+
+.Standard-title {
+    color: rgb(32, 32, 32);
+    font-family: Quicksand;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 30.65px;
+    text-align: center;
+    margin-bottom: 10px; 
+}
+
+.Standard-description {
+    color: rgb(128, 128, 128);
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 28.3px;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.Standard-a {
+    
+    font-family: Quicksand;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Read {
+    display: flex; 
+    justify-content: center;
+    margin-top: 10px; 
+}
+
+.image-Curriculum {
+    display: flex; 
+    justify-content: center; 
+    width: 100%;
+}
+  
 
 @media screen and (max-width: 576px) {
     header {
@@ -191,6 +293,15 @@ header {
         position: relative;
         margin-left: 0;
     }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 24px;
+        margin-left: 50px;
+    }
+    main{
+        margin: 0 auto;
+    }
 
 }
 
@@ -199,9 +310,10 @@ header {
     hr {
         display: none;
     }
+
     .fa-solid,
     .fa-bars {
-        visibility: hidden; 
+        visibility: hidden;
     }
 
 }
